@@ -1,0 +1,11 @@
+{
+  "Description": "Centos",
+  "DiskContainers": [ {
+    "Description": "The first image",
+    "UserBucket": {
+      "S3Bucket": "andrzejj-bucket",
+      "S3Key" : "centos7-lvm-xfs.ova"
+    }
+  }
+  ]
+}

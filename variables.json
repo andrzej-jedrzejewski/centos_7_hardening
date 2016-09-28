@@ -1,0 +1,15 @@
+{
+    "os":"centos7",
+    "os_type":"RedHat_64",
+    "iso_url": "http://www.mirrorservice.org/sites/mirror.centos.org/7.2.1511/isos/x86_64/CentOS-7-x86_64-NetInstall-1511.iso",
+    "iso_checksum": "9ed9ffb5d89ab8cca834afce354daa70a21dcb410f58287d6316259ff89758f5",
+    "iso_checksum_type": "sha256",
+    "profile": "lvm-xfs",
+    "name": "xfs",
+    "disk_size": "8192",
+    "ssh_username": "centos",
+    "ssh_password": "centos",
+    "output_directory": "/tmp/packer_output/",
+    "run_virtualbox_in_background": "false",
+    "S3_bucket_name": "andrzejj-bucket"
+  }

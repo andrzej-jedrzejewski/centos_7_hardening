@@ -1,0 +1,38 @@
+
+adduser ubuntu --disabled-password
+usermod -aG sudo ubuntu
+
+
+mkdir -p /home/ubuntu/.ssh/
+chown ubuntu:ubuntu /home/ubuntu
+
+echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJ33HY2lamo8cKblg24DQ5Gaw0gA+YBXyrG6Lw3vrEitL8vXe2WplzTfvZXjxtr2zAfS/WgLULhB3eUiH2oit3Wzm+lYgSDrw5oPdHAEV0SGDzWflRvYeXVdai3v6+AQlFeolT299TOsQ4vgNLRYtehiQcbdpLIV2DSBykvf3rTG/5DU24+cy+pptlIP8UZe3yOZIwo8MR7IPQ+UaPSiz6nT5XoWjbv4/xYqzyJb238ubN6Uw+2Hu+0XUMWT9FH2GvNMayddnENz57+HH5XqBG7cW035pjLXX3siduFGOzVHvKggbMclrzVVpuXf7RZbVuLuQBmmKsyVZcJpQuxnFt andrzejj@Systemss-MacBook-Pro-37.local' > /home/ubuntu/.ssh/authorized_keys
+private_key=$'-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEAyd9x2NpWpqPHCm5YNuA0ORmsNIAPmAV8qxui8N76xIrS/L13
+tlqZc0372V48ba9swH0v1oC1C4Qd3lIh9qIrd1s5vpWIEg68OaD3RwBFdEhg81n5
+Ub2Hl1XWot7+vgEJRXqJU9vfUzrEOL4DS0WLXoYkHG3aSyFdg0gcpL3960xv+Q1N
+uPnMvqabZSD/FGXt8jmSMKPDEeyD0PlGj0os+p0+V6Fo27+P8WKs8iW9t/LmzelM
+Pth7vtF1DFk/RR9hrzTGsnXZxDc+e/hx+V6gRu3FtN+aYy1197InbhRjs1R7yoIG
+zHJa81Vabl3+0WW1bi7kAZpirMlWXCaULsZxbQIDAQABAoIBAQCpguY/OH/gZ8//
+805BrhxMAkG2x/3QInNf3tIAvswFc6jdL1+xkPwfdVFQYjANzmtcawJbdTIRHHxU
+LdV1GxGypLilTzy2JQdqwL5DMXggv5IhZeDUAXk025BirSttcsNNQyrDbvJlGgig
+uPVdJGV2Ft+Fu7y8r6StU0UyFJN+Gu3kVCmxrirr/Jr2Z98Dh55WTvjH75VuYseO
+N/U2EX+93I9lB1drxQqVAiVsMfHaxeQJD6+SBaSc74J40eTOvvprzEwimVNcYWD4
+yaxPKHII39GYjWzgm2nr8M9CnKXFa/M8bUA1ZYCh0ta8H9ol3iU+pFkaATMQK+Jh
+iXMTyYSFAoGBAP9MN/zx8ABhNaEFtkwVf7/yHjAUh2/YX4MiLUlPgQLlIhq1DeL4
+olTHRToYHUY00Jo5+ZfbSojS+Gq1MY5b+nslSAocrEErMDpxjhyL5O7J1wYJd/qg
+LwdOcjJkVHyiSrqu/QtUDHnYfK2lv2E2NTRRp5l11VL9lpumrAQHiofDAoGBAMpt
+mqQGPp47LW18CURyDffclo1C8EUJXXz6QNf0XsMHNlATqT2g2Zvu/+lczTSsul8U
+LC0858K5g3A+c53oxxM7GDWN4Ie+xjoQDO1iLU7OTra8cwdRaUGvR6x9R9NLqbZZ
+ujTnk1xtBAmeHLuQ3sFs3nzwSYGAUitK9IUMSr8PAoGAdNJGyGtZPIM/DBjWC0jH
+NWkwYSXzt71WL2ZjPKmxykZZbcktuo+1kH/C8Mt6Edc3IWuoB9Ij8CpB3Gpfa9ow
+60rrBR2LwSJnJkcyFWP6dT5NM4j/quLDwl8mKGL6ujF1aqmKRzXFo7fpjXhL88rf
+W7qFq9ZcsGY0FbOWAR4GSQsCgYEAjvzu8A/tKW4Zv62PCkcacMvjmLMA73MXE5He
+Pe1DBrZQei35LSwyqoAfSuMfnKaqG0Evl2DfQOAz5RRoLNHh1Ua36hRm1tw+P4NY
+7lGcOX9ngJMLGc8674f1s/TmyG042zL0Yix2HiJvaK/EEgXaI31Yh55f/db7s9MF
+d/nfzqcCgYEA8IfiG0QlCZJuXCkh25NTB4sCM794vN0EgZXQ1cAdJmJxc+sWyVqj
+/Uhjc6GQGixAiSg8VXJxiBQ51zdLnhfBwaa5X2atf2hsYKZlpzjj84i2zQFCKb2I
+aQh+cTmeQCNhnLeD4E52KqGytJAa/gmhrUAYQbm/m1dfRHn9UQdxK04=
+-----END RSA PRIVATE KEY-----'
+
+echo "$private_key" >  /home/ubuntu/serverspec_key.pem

@@ -1,0 +1,1 @@
+apt-get install --force-yes cloud-init cloud-utils -y

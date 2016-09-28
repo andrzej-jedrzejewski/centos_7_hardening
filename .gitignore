@@ -1,0 +1,6 @@
+iso/*
+packer_cache/*
+*.iso
+*.iso
+*.box
+*.pem
